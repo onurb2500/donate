@@ -17,4 +17,4 @@ Ver `ARCHITECTURE.md` para o desenho técnico e `DECISIONS.md` para o porquê de
 ## Links
 
 - Repositório: <https://github.com/onurb2500/donate>
-- Aplicação publicada: <URL da aplicação em produção>
+- Aplicação publicada: https://donate-zeta-three.vercel.app/
