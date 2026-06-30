@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fbf7f0;
+  --color-surface: #ffffff;
+  --color-ink: #4a4039;
+  --color-body: #6b5e54;
+  --color-muted: #9a8e83;
+  --color-placeholder: #c2b6a9;
+
+  --color-terracotta: #d98b6f;
+  --color-terracotta-600: #c9785c;
+  --color-amber: #e8b04b;
+  --color-olive: #7a8b5a;
+  --color-olive-text: #5c6b45;
+  --color-danger: #c8584c;
+
+  --color-line-input: #efe7db;
+  --color-line-card: #f3ebe1;
+  --color-line-nav: #f0e7db;
+  --color-track: #f1e9dd;
+  --color-track-strong: #efe3d3;
+  --color-disabled-bg: #f4eee5;
+  --color-disabled-text: #a99e92;
+
+  --font-display: var(--font-fredoka), sans-serif;
+  --font-sans: var(--font-nunito), sans-serif;
+
+  --radius-card: 24px;
+  --radius-field: 14px;
+  --radius-avatar: 13px;
+
+  --shadow-card: 0 18px 42px -30px rgba(150, 110, 80, 0.5);
+  --shadow-card-hover: 0 26px 50px -28px rgba(150, 110, 80, 0.55);
+  --shadow-hero: 0 24px 52px -32px rgba(150, 110, 80, 0.45);
+  --shadow-auth-card: 0 28px 54px -32px rgba(150, 110, 80, 0.45);
+  --shadow-btn: 0 14px 26px -12px rgba(217, 139, 111, 0.75);
+  --shadow-btn-olive: 0 14px 26px -12px rgba(122, 139, 90, 0.8);
+}
+
+body {
+  background-color: var(--color-cream);
+  background-image: radial-gradient(rgba(160, 120, 80, 0.06) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@layer components {
+  .btn-primary {
+    @apply w-full py-[15px] rounded-field bg-terracotta text-white font-display font-medium text-[17px] shadow-btn transition hover:brightness-95 hover:-translate-y-px;
+  }
+  .btn-olive {
+    @apply px-7 py-[14px] rounded-field bg-olive text-white font-display font-medium text-base shadow-btn-olive transition hover:brightness-95 hover:-translate-y-px whitespace-nowrap;
+  }
+  .btn-logout {
+    @apply px-[14px] py-[7px] rounded-full border border-danger/30 text-danger font-extrabold text-sm transition hover:bg-danger/10;
+  }
+  .field {
+    @apply w-full box-border px-[15px] py-[14px] rounded-field border-[1.5px] border-line-input bg-cream text-base text-ink outline-none transition focus:border-terracotta focus:bg-white;
+  }
+  .field-olive-focus {
+    @apply focus:border-olive;
+  }
+  .label {
+    @apply block mb-[7px] text-[12.5px] font-extrabold uppercase tracking-[.03em] text-muted;
+  }
+  .card {
+    @apply bg-surface rounded-card border border-line-card shadow-card;
+  }
+  .badge-meta {
+    @apply text-[11px] font-extrabold text-olive-text bg-olive/15 px-[9px] py-1 rounded-full whitespace-nowrap;
+  }
+  .alert-error {
+    @apply bg-danger/10 text-danger rounded-[13px] px-[15px] py-3 text-sm font-bold;
+  }
+  .alert-success {
+    @apply bg-olive/14 text-olive-text rounded-[13px] px-[15px] py-3 text-sm font-bold;
+  }
+}
