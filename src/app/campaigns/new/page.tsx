@@ -25,7 +25,7 @@ export default function NewCampaignPage() {
       const data = await res.json();
       router.push(`/campaigns/${data.id}`);
     } else {
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
       setError(data.error ?? "Erro ao criar campanha.");
     }
   }

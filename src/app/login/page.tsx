@@ -24,7 +24,7 @@ export default function LoginPage() {
       router.push("/");
       router.refresh();
     } else {
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
       setError(data.error ?? "Erro ao entrar.");
     }
   }

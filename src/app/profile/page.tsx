@@ -31,7 +31,7 @@ export default function ProfilePage() {
     if (res.ok) {
       setMessage("Dados atualizados ♥");
     } else {
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
       setError(data.error ?? "Erro ao atualizar.");
     }
   }
