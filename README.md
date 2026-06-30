@@ -8,10 +8,13 @@ Ver `ARCHITECTURE.md` para o desenho técnico e `DECISIONS.md` para o porquê de
 
 ## Integrantes
 
-- Nome completo — matrícula
-- Nome completo — matrícula
+- Arthur Leite Bastos (23100458)
+- Bruno da Silva Jaques (23204894)
+- Vitor Gasparetto da Silveira (23205949)
+- Felipe Búrigo Lapolli (23250872)
+- Handryos Ghidorsi dos Santos (24205522)
 
 ## Links
 
-- Repositório: <URL do repositório>
+- Repositório: <https://github.com/onurb2500/donate>
 - Aplicação publicada: <URL da aplicação em produção>
