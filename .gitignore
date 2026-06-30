@@ -43,3 +43,12 @@ local.db-*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# MDs
+ARCHITECTURE.md
+CLAUDE.md
+DECISIONS.md
+regras_trabalho.md
+Vaquinha-design-spec.md
+SCREENS.md
+
